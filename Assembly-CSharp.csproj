@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\initChess_normal.cs" />
      <Compile Include="Assets\initGame.cs" />
+     <Compile Include="Assets\initOrder.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
