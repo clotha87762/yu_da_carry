@@ -3,7 +3,7 @@ using System.Collections;
 
 public class gameStateManager : MonoBehaviour {
 	int turnCount;
-	bool playerFlag;
+	int playerFlag;
 	int state;
 
 	// Use this for initialization
@@ -28,7 +28,7 @@ public class gameStateManager : MonoBehaviour {
 		}*/
 	}
 
-	public void setPlayerFlag(bool flag){
+	public void setPlayerFlag(int flag){
 		playerFlag = flag;
 		Debug.Log("set playerFlag finish");
 	}

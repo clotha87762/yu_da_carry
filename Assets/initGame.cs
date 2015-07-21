@@ -10,6 +10,9 @@ public class initGame : MonoBehaviour {
 
 		initC.setBoard ();
 		initO.setOrder ();
+
+
+
 		GSM.setGameState (1);
 	}
 	

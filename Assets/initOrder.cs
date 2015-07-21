@@ -13,8 +13,8 @@ public class initOrder : MonoBehaviour {
 	
 	}
 	public void setOrder(){
-		bool flag;
-		flag = (Random.Range (0, 1)==1?true:false);
+		int flag;
+		flag = Random.Range (0, 1);
 		GSM.setPlayerFlag (flag);
 		Debug.Log("set order finish");
 	}
