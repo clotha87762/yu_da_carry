@@ -2,8 +2,7 @@
 using System.Collections;
 
 public class initGame : MonoBehaviour {
-
-
+	public gameStateManager GSM;
 	// Use this for initialization
 	void Start () {
 		initChess_normal initC = gameObject.GetComponent<initChess_normal> ();
@@ -11,6 +10,7 @@ public class initGame : MonoBehaviour {
 
 		initC.setBoard ();
 		initO.setOrder ();
+		GSM.setGameState (1);
 	}
 	
 	// Update is called once per frame
