@@ -52,6 +52,8 @@
      <Compile Include="Assets\initChess_normal.cs" />
      <Compile Include="Assets\initGame.cs" />
      <Compile Include="Assets\initOrder.cs" />
+     <Compile Include="Assets\raycast.cs" />
+     <Compile Include="Assets\rightClickCancel.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
