@@ -3,19 +3,18 @@ using System.Collections;
 
 public class gameStateManager : MonoBehaviour {
 	int turnCount;
-	int playerFlag;
+	int team;
 	public int state;
 	public int actionState;
 
+	public PawnController PC;
 	goldManager GM;
 	gameRule_normal GR;
-	int k;
 	// Use this for initialization
 	void Start () {
 		turnCount = 0;
 		state = 0;
 		actionState = 0;
-		k = 0;
 
 		GM = gameObject.GetComponent<goldManager> ();
 		GR = gameObject.GetComponent<gameRule_normal>();
@@ -27,7 +26,8 @@ public class gameStateManager : MonoBehaviour {
 		
 		} 
 		else if (state == 1) {
-			GM.farmerGold(playerFlag);
+			GM.farmerGold(team);
+			PC.turnStart(team);
 
 			setGameState(2);
 			setActionState(1);
@@ -37,23 +37,24 @@ public class gameStateManager : MonoBehaviour {
 		}
 		else if (state == 3) {
 			//call pwanManager atk function
-			changePlayer();
+			changeTeam();
 			if(GR.judgeGameover()==true){
 				setGameState(0);
 			}
+			addTurnCount();
 			setGameState(1);
 		}
 	}
 
-	public void setPlayerFlag(int flag){
-		playerFlag = flag;
-		Debug.Log("set playerFlag finish");
+	public void setTeam(int flag){
+		team = flag;
+		Debug.Log("set team finish");
 	}
-	public void changePlayer(){
-		if (playerFlag == 0)
-			playerFlag = 1;
+	public void changeTeam(){
+		if (team == 0)
+			team = 1;
 		else
-			playerFlag = 0;
+			team = 0;
 	}
 	public void setGameState(int num){
 		state = num;
@@ -62,5 +63,8 @@ public class gameStateManager : MonoBehaviour {
 	public void setActionState(int num){
 		actionState = num;
 		//Debug.Log("change actionState to "+num);
+	}
+	public void addTurnCount(){
+		turnCount++;
 	}
 }

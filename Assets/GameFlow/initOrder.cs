@@ -15,7 +15,7 @@ public class initOrder : MonoBehaviour {
 	public void setOrder(){
 		int flag;
 		flag = Random.Range (0, 1);
-		GSM.setPlayerFlag (flag);
+		GSM.setTeam (flag);
 		Debug.Log("set order finish");
 	}
 }

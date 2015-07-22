@@ -4,6 +4,9 @@ using System.Collections;
 public class goldManager : MonoBehaviour {
 	int blueGold;
 	int redGold;
+
+	public PawnController PC;
+
 	// Use this for initialization
 	void Start () {
 		blueGold = 0;
@@ -27,7 +30,7 @@ public class goldManager : MonoBehaviour {
 	}
 
 	public void farmerGold(int flag){
-		//int count = pawmManager.findFarmerGold(flag);
+		//int count = PC.findFarmerGold(flag);
 		//addGold (flag, count);
 	}
 }
