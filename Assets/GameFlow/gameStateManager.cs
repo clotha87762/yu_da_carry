@@ -9,11 +9,13 @@ public class gameStateManager : MonoBehaviour {
 
 	goldManager GM;
 	gameRule_normal GR;
+	int k;
 	// Use this for initialization
 	void Start () {
 		turnCount = 0;
 		state = 0;
 		actionState = 0;
+		k = 0;
 
 		GM = gameObject.GetComponent<goldManager> ();
 		GR = gameObject.GetComponent<gameRule_normal>();
