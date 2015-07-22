@@ -46,13 +46,16 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Chess\CubeControl.cs" />
-     <Compile Include="Assets\Chess\Menu.cs" />
-     <Compile Include="Assets\Chess\TileControl.cs" />
-     <Compile Include="Assets\Chess\example1.cs" />
-     <Compile Include="Assets\Script\GridControl.cs" />
-     <Compile Include="Assets\Script\MouseControl.cs" />
-     <Compile Include="Assets\Script\PawnMove.cs" />
+     <Compile Include="Assets\Scripts\Grid.cs" />
+     <Compile Include="Assets\Scripts\GridDataStructure.cs" />
+     <Compile Include="Assets\Scripts\MapController.cs" />
+     <Compile Include="Assets\Scripts\MapDataStructure.cs" />
+     <Compile Include="Assets\Scripts\MapGrid.cs" />
+     <Compile Include="Assets\Scripts\MouseControl.cs" />
+     <Compile Include="Assets\Scripts\PawnMove.cs" />
+     <Compile Include="Assets\Scripts\SpriteFaceCamera.cs" />
+     <Compile Include="Assets\Scripts\TestingScripts\MousePointShowRange.cs" />
+     <Compile Include="Assets\Scripts\TestingScripts\PawnSpriteMove.cs" />
      <Compile Include="Assets\TileDraw\Scripts\Assets\Entity.cs" />
      <Compile Include="Assets\TileDraw\Scripts\Assets\EntitySet.cs" />
      <Compile Include="Assets\TileDraw\Scripts\Assets\IAsset.cs" />
@@ -67,13 +70,7 @@
      <Compile Include="Assets\TileDraw\Scripts\Util\CreatePlane.cs" />
      <Compile Include="Assets\TileDraw\Scripts\Util\Enums.cs" />
      <Compile Include="Assets\TileDraw\Scripts\Util\Util.cs" />
-     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
-     <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
-     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-     <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
      <None Include="Assets\TileDraw\readme.txt" />
-     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
-     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -86,10 +83,6 @@
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>D:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{837A8291-D032-CFF0-E999-81C279C03085}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
