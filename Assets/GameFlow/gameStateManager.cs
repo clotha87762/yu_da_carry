@@ -9,7 +9,6 @@ public class gameStateManager : MonoBehaviour {
 
 	goldManager GM;
 	gameRule_normal GR;
-
 	// Use this for initialization
 	void Start () {
 		turnCount = 0;

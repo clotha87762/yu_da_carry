@@ -46,14 +46,22 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\gameRule_normal.cs" />
-     <Compile Include="Assets\gameStateManager.cs" />
-     <Compile Include="Assets\goldManager.cs" />
-     <Compile Include="Assets\initChess_normal.cs" />
-     <Compile Include="Assets\initGame.cs" />
-     <Compile Include="Assets\initOrder.cs" />
-     <Compile Include="Assets\raycast.cs" />
-     <Compile Include="Assets\rightClickCancel.cs" />
+     <Compile Include="Assets\GameFlow\gameRule_normal.cs" />
+     <Compile Include="Assets\GameFlow\gameStateManager.cs" />
+     <Compile Include="Assets\GameFlow\goldManager.cs" />
+     <Compile Include="Assets\GameFlow\initChess_normal.cs" />
+     <Compile Include="Assets\GameFlow\initGame.cs" />
+     <Compile Include="Assets\GameFlow\initOrder.cs" />
+     <Compile Include="Assets\GameFlow\raycast.cs" />
+     <Compile Include="Assets\GameFlow\rightClickCancel.cs" />
+     <Compile Include="Assets\PawnScript\Archer.cs" />
+     <Compile Include="Assets\PawnScript\Farmer.cs" />
+     <Compile Include="Assets\PawnScript\MapDataStructure.cs" />
+     <Compile Include="Assets\PawnScript\NewBehaviourScript.cs" />
+     <Compile Include="Assets\PawnScript\Pawn.cs" />
+     <Compile Include="Assets\PawnScript\PawnController.cs" />
+     <Compile Include="Assets\PawnScript\Warrior.cs" />
+     <Compile Include="Assets\PawnScript\Wizard.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
