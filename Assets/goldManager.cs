@@ -15,13 +15,19 @@ public class goldManager : MonoBehaviour {
 	void Update () {
 		
 	}
-	public void addGold(bool flag, int count){
-		if (flag == false) {
+
+	public void addGold(int flag, int count){
+		if (flag == 0) {
 			blueGold += count;
 			Debug.Log("Blue's gold +"+count);
-		} else if (flag == true) {
+		} else if (flag == 1) {
 			redGold += count;
 			Debug.Log("Red's gold +"+count);
 		}
+	}
+
+	public void farmerGold(int flag){
+		//int count = pawmManager.findFarmerGold(flag);
+		//addGold (flag, count);
 	}
 }

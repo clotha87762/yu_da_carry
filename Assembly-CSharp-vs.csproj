@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\gameRule_normal.cs" />
      <Compile Include="Assets\gameStateManager.cs" />
      <Compile Include="Assets\goldManager.cs" />
      <Compile Include="Assets\initChess_normal.cs" />

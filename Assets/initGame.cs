@@ -11,13 +11,11 @@ public class initGame : MonoBehaviour {
 		initC.setBoard ();
 		initO.setOrder ();
 
-
-
 		GSM.setGameState (1);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 }
