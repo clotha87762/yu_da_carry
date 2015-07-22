@@ -59,15 +59,15 @@ public class PawnController : MonoBehaviour {
 	public void setPawn(PawnClass type,int x,int y,int team){
 		if (pawns [x, y] != null)
 			return;
-		Pawn newPawn;
+		Pawn newPawn =  null;
 		if(type == PawnClass.Warrior)
-			newPawn = Instantiate(WarriorPrefab,new Vector3(-7+2*x,1.0f,-7+2*y),Quaternion.identity);
+			newPawn = (Pawn)Instantiate(WarriorPrefab,new Vector3(-7+2*x,1.0f,-7+2*y),Quaternion.identity);
 		else if(type==PawnClass.Wizard)
-			newPawn = Instantiate(WizardPrefab,new Vector3(-7+2*x,1.0f,-7+2*y),Quaternion.identity);
+			newPawn = (Pawn)Instantiate(WizardPrefab,new Vector3(-7+2*x,1.0f,-7+2*y),Quaternion.identity);
 		else if(type==PawnClass.Archer)
-			newPawn = Instantiate(ArcherPrefab,new Vector3(-7+2*x,1.0f,-7+2*y),Quaternion.identity);
+			newPawn = (Pawn)Instantiate(ArcherPrefab,new Vector3(-7+2*x,1.0f,-7+2*y),Quaternion.identity);
 		else if(type==PawnClass.Farmer)
-			newPawn = Instantiate(FarmerPrefab,new Vector3(-7+2*x,1.0f,-7+2*y),Quaternion.identity);
+			newPawn = (Pawn)Instantiate(FarmerPrefab,new Vector3(-7+2*x,1.0f,-7+2*y),Quaternion.identity);
 		newPawn.setPosition(x,y);
 		newPawn.setTeam(team);
 		newPawn.setPawnController(this);
@@ -111,12 +111,12 @@ public class PawnController : MonoBehaviour {
 
 		for (i=0; i<8; i++)
 			for (j=0; j<6; j++)
-				occupied8X6 [i] [j] = false;
+				occupied8X6 [i,j] = false;
 
 		for(i=0;i<3;i++){
 			a = random[i]/6;
 			b= random[i]%6;
-				newPawn = Instantiate(WarriorPrefab,new Vector3(-7+2*a,1.0f,-7+2*b),Quaternion.identity);
+			newPawn =(Pawn) Instantiate(WarriorPrefab,new Vector3(-7+2*a,1.0f,-7+2*b),Quaternion.identity);
 			newPawn.setPosition(a,b);
 			newPawn.setTeam(0);
 			newPawn.setPawnController(this);
@@ -125,7 +125,7 @@ public class PawnController : MonoBehaviour {
 		for(i=3;i<6;i++){
 			a = random[i]/6;
 			b= random[i]%6;
-				newPawn = Instantiate(WarriorPrefab,new Vector3(-7+2*a,1.0f,-7+2*b),Quaternion.identity);
+			newPawn = (Pawn)Instantiate(WarriorPrefab,new Vector3(-7+2*a,1.0f,-7+2*b),Quaternion.identity);
 			newPawn.setTeam(1);
 			newPawn.setPosition(a,b);
 			newPawn.setPawnController(this);
@@ -134,7 +134,7 @@ public class PawnController : MonoBehaviour {
 		for(i=6;i<9;i++){
 			a = random[i]/6;
 			b= random[i]%6;
-				newPawn = Instantiate(WizardPrefab,new Vector3(-7+2*a,1.0f,-7+2*b),Quaternion.identity);
+			newPawn =(Pawn) Instantiate(WizardPrefab,new Vector3(-7+2*a,1.0f,-7+2*b),Quaternion.identity);
 			newPawn.setTeam(0);
 			newPawn.setPosition(a,b);
 			newPawn.setPawnController(this);
@@ -143,7 +143,7 @@ public class PawnController : MonoBehaviour {
 		for(i=9;i<12;i++){
 			a = random[i]/6;
 			b= random[i]%6;
-				newPawn = Instantiate(WizardPrefab,new Vector3(-7+2*a,1.0f,-7+2*b),Quaternion.identity);
+			newPawn =(Pawn) Instantiate(WizardPrefab,new Vector3(-7+2*a,1.0f,-7+2*b),Quaternion.identity);
 			newPawn.setTeam(1);
 			newPawn.setPosition(a,b);
 			newPawn.setPawnController(this);
@@ -152,7 +152,7 @@ public class PawnController : MonoBehaviour {
 		for(i=12;i<15;i++){
 			a = random[i]/6;
 			b= random[i]%6;
-				newPawn = Instantiate(ArcherPrefab,new Vector3(-7+2*a,1.0f,-7+2*b),Quaternion.identity);
+			newPawn = (Pawn)Instantiate(ArcherPrefab,new Vector3(-7+2*a,1.0f,-7+2*b),Quaternion.identity);
 			newPawn.setTeam(0);
 			newPawn.setPosition(a,b);
 			newPawn.setPawnController(this);
@@ -161,7 +161,7 @@ public class PawnController : MonoBehaviour {
 		for(i=15;i<18;i++){
 			a = random[i]/6;
 			b= random[i]%6;
-				newPawn = Instantiate(ArcherPrefab,new Vector3(-7+2*a,1.0f,-7+2*b),Quaternion.identity);
+			newPawn = (Pawn)Instantiate(ArcherPrefab,new Vector3(-7+2*a,1.0f,-7+2*b),Quaternion.identity);
 			newPawn.setTeam(1);
 			newPawn.setPosition(a,b);
 			newPawn.setPawnController(this);
@@ -170,7 +170,7 @@ public class PawnController : MonoBehaviour {
 		for(i=18;i<21;i++){
 			a = random[i]/6;
 			b= random[i]%6;
-				newPawn = Instantiate(FarmerPrefab,new Vector3(-7+2*a,1.0f,-7+2*b),Quaternion.identity);
+			newPawn = (Pawn)Instantiate(FarmerPrefab,new Vector3(-7+2*a,1.0f,-7+2*b),Quaternion.identity);
 			newPawn.setTeam(0);
 			newPawn.setPosition(a,b);
 			newPawn.setPawnController(this);
@@ -179,7 +179,7 @@ public class PawnController : MonoBehaviour {
 		for(i=21;i<24;i++){
 			a = random[i]/6;
 			b= random[i]%6;
-				newPawn = Instantiate(FarmerPrefab,new Vector3(-7+2*a,1.0f,-7+2*b),Quaternion.identity);
+			newPawn = (Pawn)Instantiate(FarmerPrefab,new Vector3(-7+2*a,1.0f,-7+2*b),Quaternion.identity);
 			newPawn.setTeam(1);
 			newPawn.setPosition(a,b);
 			newPawn.setPawnController(this);
