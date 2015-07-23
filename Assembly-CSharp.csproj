@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{501BD3FF-7F48-2366-810A-1677FF50E37F}</ProjectGuid>
+	<ProjectGuid>{9E6E43D5-8E2D-8B94-D2AA-55B7D68E7F95}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,6 +46,21 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\GameFlow\gameRule_normal.cs" />
+     <Compile Include="Assets\GameFlow\gameStateManager.cs" />
+     <Compile Include="Assets\GameFlow\goldManager.cs" />
+     <Compile Include="Assets\GameFlow\initChess_normal.cs" />
+     <Compile Include="Assets\GameFlow\initGame.cs" />
+     <Compile Include="Assets\GameFlow\initOrder.cs" />
+     <Compile Include="Assets\GameFlow\raycast.cs" />
+     <Compile Include="Assets\GameFlow\rightClickCancel.cs" />
+     <Compile Include="Assets\PawnScript\Archer.cs" />
+     <Compile Include="Assets\PawnScript\Farmer.cs" />
+     <Compile Include="Assets\PawnScript\NewBehaviourScript.cs" />
+     <Compile Include="Assets\PawnScript\Pawn.cs" />
+     <Compile Include="Assets\PawnScript\PawnController.cs" />
+     <Compile Include="Assets\PawnScript\Warrior.cs" />
+     <Compile Include="Assets\PawnScript\Wizard.cs" />
      <Compile Include="Assets\Scripts\Grid.cs" />
      <Compile Include="Assets\Scripts\GridDataStructure.cs" />
      <Compile Include="Assets\Scripts\MapController.cs" />
@@ -70,6 +85,10 @@
      <Compile Include="Assets\TileDraw\Scripts\Util\CreatePlane.cs" />
      <Compile Include="Assets\TileDraw\Scripts\Util\Enums.cs" />
      <Compile Include="Assets\TileDraw\Scripts\Util\Util.cs" />
+     <None Include="Assets\DOTween\readme.txt" />
+     <None Include="Assets\DOTween\DOTween46.xml" />
+     <None Include="Assets\DOTween\DOTween43.xml" />
+     <None Include="Assets\DOTween\DOTween50.xml" />
      <None Include="Assets\TileDraw\readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
@@ -79,6 +98,18 @@
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>D:/kamisama366095/UNITY Project/ChessDark/Assets/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween43">
+ <HintPath>D:/kamisama366095/UNITY Project/ChessDark/Assets/DOTween/DOTween43.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween46">
+ <HintPath>D:/kamisama366095/UNITY Project/ChessDark/Assets/DOTween/DOTween46.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>D:/kamisama366095/UNITY Project/ChessDark/Assets/DOTween/DOTween50.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>D:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

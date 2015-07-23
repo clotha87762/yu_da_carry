@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{837A8291-D032-CFF0-E999-81C279C03085}</ProjectGuid>
+	<ProjectGuid>{0CF4C362-39DE-ED44-F4D0-55A4B255CCB7}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -46,55 +46,37 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
-     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
-     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
-     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
-     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
-     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
-     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
-     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
-     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
-     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
-     <Compile Include="Assets\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
-     <Compile Include="Assets\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
-     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
-     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\GerstnerDisplace.cs" />
-     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\MeshContainer.cs" />
-     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\PlanarReflection.cs" />
-     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\SpecularLighting.cs" />
-     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\Water.cs" />
-     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
-     <Compile Include="Assets\Standard Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\ActivateTrigger.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\AutoMoveAndRotate.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\CameraRefocus.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\CurveControlledBob.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\DragRigidbody.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\DynamicShadowSettings.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\FOVKick.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\FPSCounter.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\FollowTarget.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\ForcedReset.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\LerpControlledBob.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\ObjectResetter.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\PlatformSpecificContent.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\SimpleActivatorMenu.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\SimpleMouseRotator.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\SmoothFollow.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\TimedObjectActivator.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\TimedObjectDestructor.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\WaypointCircuit.cs" />
-     <Compile Include="Assets\Standard Assets\Utility\WaypointProgressTracker.cs" />
-     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
-     <None Include="Assets\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
-     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
-     <None Include="Assets\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
-     <None Include="Assets\TileDraw\readme.txt" />
-     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
-     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+     <Compile Include="Assets\Plugins\TileDraw\Editor\Assets\EntitySetManager.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Editor\Assets\ResourceManager.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Editor\Assets\TileSetManager.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Editor\Map\MapDrawing.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Editor\Map\MapDrawingStates\EntityMapDrawState.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Editor\Map\MapDrawingStates\MapDrawState.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Editor\Map\MapDrawingStates\TextureMapDrawState.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Editor\Map\MapDrawingStates\VertexDrawState.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Editor\Map\MapManagerEditor.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Editor\Map\MapManagerWizard.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Editor\Menu\Menu.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Editor\Util\EditorUtil.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Scripts\Assets\Entity.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Scripts\Assets\EntitySet.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Scripts\Assets\IAsset.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Scripts\Assets\Set.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Scripts\Assets\TextureAsset.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Scripts\Assets\TileSet.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Scripts\Map\Cell.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Scripts\Map\CellFactory.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Scripts\Map\MapEditing.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Scripts\Map\MapManager.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Scripts\Map\Tile.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Scripts\Util\CreatePlane.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Scripts\Util\Enums.cs" />
+     <Compile Include="Assets\Plugins\TileDraw\Scripts\Util\Util.cs" />
+     <None Include="Assets\Demigiant\DOTween\DOTween46.xml" />
+     <None Include="Assets\Demigiant\DOTween\readme.txt" />
+     <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />
+     <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
+     <None Include="Assets\Plugins\TileDraw\readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -103,6 +85,18 @@
  </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>D:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>D:/kamisama366095/UNITY Project/ChessDark/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween43">
+ <HintPath>D:/kamisama366095/UNITY Project/ChessDark/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween46">
+ <HintPath>D:/kamisama366095/UNITY Project/ChessDark/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>D:/kamisama366095/UNITY Project/ChessDark/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>D:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

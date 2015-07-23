@@ -15,7 +15,6 @@ public class MapDrawing : EditorWindow
 
     public MapManager Map;
 
-
     public void Init(MapManager map, MapDrawState state = null)
     {
         minSize = new Vector2(84, 196);
